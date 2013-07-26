@@ -1,6 +1,4 @@
-#!/bin/bash
-
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,25 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-for FILE in `cat cm-proprietary-blobs.txt | grep -v "^#"`; do
-    # FILE format is src':'dest, so parse it
-    DEST=${FILE##*:}
-    saveIFS=$IFS
-    IFS=":"
-    SRC=($FILE)
-    IFS=$saveIFS
-    SRC=${SRC[0]}
+LOCAL_STEM := manta/device-partial.mk
 
-    # create the dest dir if necessary
-    DIR=`dirname $DEST`
-    if [ ! -d ${DIR} ]; then
-	echo mkdir -p ${DIR}
-        mkdir -p ${DIR}
-    fi
-
-    # pull the file off the device into dest
-    echo adb pull ${SRC} ${DEST}
-    adb pull ${SRC} ${DEST}
-done
-
-./setup-makefiles.sh
+$(call inherit-product-if-exists, vendor/audience/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
+$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
