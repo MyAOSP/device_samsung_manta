@@ -23,4 +23,8 @@
     <!-- Value for Settings.Global.LOW_BATTERY_SOUND_TIMEOUT:
          Mute battery sounds on tablets after one hour with screen off -->
     <integer name="def_low_battery_sound_timeout">3600000</integer>
+
+    <!-- Value for Settings.Global.ENABLE_TRANSLUCENT_DECOR:
+         Where the statusbar navigation bar are translucent(true) or not(false). -->
+    <bool name="def_enable_translucent_decor">false</bool>
 </resources>
