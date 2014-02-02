@@ -1,6 +1,7 @@
 [
     {
-      "repository": "kernel_samsung_manta",
-      "target_path": "kernel/samsung/manta"
+      "repository": "TeamBAKED/kernel_samsung_manta",
+      "target_path": "kernel/samsung/manta",
+      "branch": "kk-4.4"
     }
 ]
