@@ -3,5 +3,10 @@
       "repository": "TeamBAKED/kernel_samsung_manta",
       "target_path": "kernel/samsung/manta",
       "branch": "kk-4.4"
+    },
+    {
+      "repository": "TeamBAKED/vendor_samsung",
+      "target_path": "vendor/samsung",
+      "branch": "kk-4.4"
     }
 ]
