@@ -8,5 +8,20 @@
       "repository": "TeamBAKED/vendor_samsung",
       "target_path": "vendor/samsung",
       "branch": "kk-4.4"
+    },
+    {
+      "repository": "TeamBAKED/vendor_audience",
+      "target_path": "vendor/audience",
+      "branch": "kk-4.4"
+    },
+    {
+      "repository": "TeamBAKED/vendor_broadcom",
+      "target_path": "vendor/broadcom",
+      "branch": "kk-4.4"
+    },
+    {
+      "repository": "TeamBAKED/vendor_widevine",
+      "target_path": "vendor/widevine",
+      "branch": "kk-4.4"
     }
 ]
